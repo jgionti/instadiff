@@ -2,16 +2,21 @@
 Python script to quickly check who isn't following you back on Instagram.
 
 ## How to Use
-1. Download Python: https://www.python.org/downloads/ (newer versions should work but I used Python 3.10.6)
-2. Create a file in the directory with the name `.env` with this exact structure:
+1. Use Instagram to request to download your information: https://accountscenter.instagram.com/info_and_permissions/dyi
+    - Select `Download or transfer information`
+    - Select `Some of your information`
+    - Only select `Followers and following` then `Next`
+    - Choose `Download to device` then `Next`
+    - Now create the files to download
+        - Set `Date range` to `All time`
+        - Set `Notify` to your email
+        - Set `Format` to `JSON`
+        - `Media quality` doesn't matter
+    - Now wait ~10 minutes for Instagram to send you your files
+2. Download Python: https://www.python.org/downloads/ (newer versions should work but I used Python 3.10.6)
+3. Put the ZIP folder vended by Instagram into this project's `in` folder
+4. Run the following in Command Line:
 ```
-ACCOUNT_USERNAME = "your_username"
-ACCOUNT_PASSWORD = "your_password"
-```
-
-3. Run the following in Command Line:
-```
-pip install -r requirements.txt
 python insta.py
 ```
-You'll get a login confirmation on your app. Allow it, and you'll eventually see a full list of folks who don't follow you back.
+5. Now you know how to restore balance.

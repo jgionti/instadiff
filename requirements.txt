@@ -1,2 +1,0 @@
-instagrapi==1.17.8
-python-dotenv==1.0.0
